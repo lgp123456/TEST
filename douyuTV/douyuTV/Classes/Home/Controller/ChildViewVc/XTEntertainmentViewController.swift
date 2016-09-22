@@ -117,7 +117,7 @@ extension XTEntertainmentViewController {
     
     private func loadEnterData(){
 //        let parameters = ["limit" : 20 , "client_sys" : "ios" , "offset" : dataArray.count]
-        
+        //url可以简化,没必要传那么多参数
         XTHttpManager.shareInstance.reqeustData(.GET, urlString: "http://capi.douyucdn.cn/api/v1/getHotRoom/2?aid=ios&client_sys=ios&time=1472045700&auth=e3026b945461af531b086b4f9927ab95", parameters: nil) { (result, error) in
             //错误校验
             if error != nil {
