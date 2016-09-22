@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="game" id="XaX-eW-aPh">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_orange_3x14_" translatesAutoresizingMaskIntoConstraints="NO" id="B2D-Bx-jK1">
+                    <rect key="frame" x="10" y="7.5" width="3" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="awt-vd-scn"/>
+                        <constraint firstAttribute="width" constant="3" id="udC-6b-JxE"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全部" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRM-f5-67I">
+                    <rect key="frame" x="21" y="4" width="34" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="B2D-Bx-jK1" firstAttribute="centerY" secondItem="XaX-eW-aPh" secondAttribute="centerY" id="aSc-Xc-WCj"/>
+                <constraint firstItem="WRM-f5-67I" firstAttribute="centerY" secondItem="XaX-eW-aPh" secondAttribute="centerY" id="iQv-ap-UKF"/>
+                <constraint firstItem="B2D-Bx-jK1" firstAttribute="leading" secondItem="XaX-eW-aPh" secondAttribute="leading" constant="10" id="loi-3x-iGm"/>
+                <constraint firstItem="WRM-f5-67I" firstAttribute="leading" secondItem="B2D-Bx-jK1" secondAttribute="trailing" constant="8" id="t4B-iT-kCK"/>
+            </constraints>
+            <point key="canvasLocation" x="445.5" y="437"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="Img_orange_3x14_" width="3" height="14"/>
+    </resources>
+</document>

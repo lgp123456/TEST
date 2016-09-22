@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lEd-bH-nQr" customClass="XTFaceCollectionViewCell" customModule="douyuTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="189.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="189.5"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dyla_ico_location_12x12_" translatesAutoresizingMaskIntoConstraints="NO" id="FGK-6e-r8s">
+                        <rect key="frame" x="8" y="174" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="FGK-6e-r8s" secondAttribute="height" multiplier="1:1" id="Eih-b3-SkJ"/>
+                            <constraint firstAttribute="width" constant="12" id="SgE-UG-vzS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="吃饭了吗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47b-Sj-CUg">
+                        <rect key="frame" x="10" y="155" width="130" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广州市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQO-ra-ZA3">
+                        <rect key="frame" x="22" y="172" width="36" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s07-f1-iiA">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="35I-Ex-hB2"/>
+                            <constraint firstAttribute="width" secondItem="s07-f1-iiA" secondAttribute="height" multiplier="1:1" id="WkA-Ou-swM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 66.6万在线    " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lq-cl-hMs">
+                        <rect key="frame" x="73" y="5" width="72" height="24"/>
+                        <color key="backgroundColor" red="0.1083133012820513" green="0.1083133012820513" blue="0.1083133012820513" alpha="0.42411099137931035" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="72" id="U75-1q-1Zx"/>
+                            <constraint firstAttribute="height" constant="24" id="per-XO-OV1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="s07-f1-iiA" secondAttribute="trailing" id="FPe-hM-yRF"/>
+                <constraint firstItem="FGK-6e-r8s" firstAttribute="top" secondItem="47b-Sj-CUg" secondAttribute="bottom" constant="5" id="Mpv-27-Far"/>
+                <constraint firstItem="yQO-ra-ZA3" firstAttribute="centerY" secondItem="FGK-6e-r8s" secondAttribute="centerY" constant="-1" id="Q0E-5q-x1w"/>
+                <constraint firstItem="47b-Sj-CUg" firstAttribute="leading" secondItem="lEd-bH-nQr" secondAttribute="leading" constant="10" id="Q9H-WJ-dIp"/>
+                <constraint firstItem="FGK-6e-r8s" firstAttribute="leading" secondItem="lEd-bH-nQr" secondAttribute="leading" constant="8" id="Qay-yA-v8J"/>
+                <constraint firstItem="yQO-ra-ZA3" firstAttribute="leading" secondItem="FGK-6e-r8s" secondAttribute="trailing" constant="2" id="TEq-aw-S8G"/>
+                <constraint firstItem="2lq-cl-hMs" firstAttribute="top" secondItem="lEd-bH-nQr" secondAttribute="top" constant="5" id="gej-Sk-6MO"/>
+                <constraint firstItem="s07-f1-iiA" firstAttribute="leading" secondItem="lEd-bH-nQr" secondAttribute="leading" id="ht4-Ib-2N1"/>
+                <constraint firstAttribute="trailing" secondItem="47b-Sj-CUg" secondAttribute="trailing" constant="10" id="m0h-jF-AiS"/>
+                <constraint firstItem="47b-Sj-CUg" firstAttribute="top" secondItem="s07-f1-iiA" secondAttribute="bottom" constant="5" id="n8v-ld-xch"/>
+                <constraint firstAttribute="trailing" secondItem="2lq-cl-hMs" secondAttribute="trailing" constant="5" id="sxW-ES-Bjq"/>
+                <constraint firstItem="s07-f1-iiA" firstAttribute="top" secondItem="lEd-bH-nQr" secondAttribute="top" id="wcl-cC-gqh"/>
+            </constraints>
+            <size key="customSize" width="150" height="189.5"/>
+            <connections>
+                <outlet property="citylabel" destination="yQO-ra-ZA3" id="U2p-Es-ox6"/>
+                <outlet property="iconImageView" destination="s07-f1-iiA" id="6HD-WV-bcq"/>
+                <outlet property="onlineLabel" destination="2lq-cl-hMs" id="M3a-f3-aZr"/>
+                <outlet property="roomNamelabel" destination="47b-Sj-CUg" id="AB2-90-UOp"/>
+            </connections>
+            <point key="canvasLocation" x="414" y="397.75"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dyla_ico_location_12x12_" width="12" height="12"/>
+    </resources>
+</document>
