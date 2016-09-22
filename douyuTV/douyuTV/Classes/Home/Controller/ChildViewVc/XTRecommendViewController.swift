@@ -28,10 +28,7 @@ class XTRecommendViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        //kkajsdhkjahskdhk
-        ///asdkjahskjh
+        //测试一下
 
         //取消系统设置的内边距
         automaticallyAdjustsScrollViewInsets = false
