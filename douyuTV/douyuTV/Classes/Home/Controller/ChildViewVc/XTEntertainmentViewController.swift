@@ -100,7 +100,7 @@ extension XTEntertainmentViewController {
         //设置页码指示器选中和非选中的颜色
         pageControl.currentPageIndicatorTintColor = UIColor.orangeColor()
         pageControl.pageIndicatorTintColor = UIColor.grayColor()
-        pageControl.frame = CGRectMake(0,-30, topView.frame.width, 20);
+        pageControl.frame = CGRectMake(0,-20, topView.frame.width, 20);
         //设置当前页
         pageControl.currentPage = 0
         //设置总页数  不设置默认为0   即不显示分页
